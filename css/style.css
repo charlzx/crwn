@@ -52,6 +52,7 @@ main > div > div {
   margin: 0 auto;
   padding: 30px;
   color: rgba(0, 0, 0, 0.692);
+  border: 1px solid #000;
 }
 
 main h2 {
