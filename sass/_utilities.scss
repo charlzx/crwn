@@ -1,0 +1,26 @@
+%overlay {
+    margin: 10px auto;
+    text-align: center;
+    border: 1px solid #000;
+
+    &:hover > div{
+        background-color: rgba(255, 255, 255, 0.37);
+    }
+}
+
+.col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 32.333333%;
+}
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 49%;
+}
+
+.background-box {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+}

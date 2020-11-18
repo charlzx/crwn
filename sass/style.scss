@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import 'config';
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 20px 150px;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+p {
+    margin: 0;
+}
+
+nav {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+    }
+    li {
+        margin: 0 10px;
+
+        svg {
+            width: 20px;
+            height: auto;
+        }
+    }
+}
+
+main {
+    & > div {
+        padding: 70px 130px;
+    }
+    & > div > div {
+        background-color: rgba(255, 255, 255, 0.521);
+        width: 50%;
+        margin: 0 auto;
+        padding: 30px;
+        color: rgba(0, 0, 0, 0.692);
+        }
+        h2 {
+            font-weight: bold;
+        }
+        p {
+            font-weight: 600;
+        }
+
+    #hats-box {
+        @extend %overlay;
+        background: url('https://i.ibb.co/cvpntL1/hats.png');
+    }
+    #jacket-box {
+        @extend %overlay;
+        background: url('https://i.ibb.co/px2tCc3/jackets.png');
+    }
+    #sneakers-box {
+        @extend %overlay;
+        background: url('https://i.ibb.co/0jqHpnp/sneakers.png');
+    }
+    #women-box {
+        @extend %overlay;
+        background: url('https://i.ibb.co/GCCdy8t/womens.png');
+        height: 400px;
+        padding: 130px 100px;
+        background-size: cover;
+    }
+    #women-box:hover .box{
+        transform: scale(1.1);
+        transition: 5s ease-in-out;
+    }
+    #men-box {
+        @extend %overlay;
+        background: url('https://i.ibb.co/R70vBrQ/men.png');
+        height: 400px;
+        padding: 130px 100px;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+
+@import 'utilities';
