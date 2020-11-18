@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 20px 150px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  margin: 0;
+}
+
+nav {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav li svg {
+  width: 20px;
+  height: auto;
+}
+
+main > div {
+  padding: 70px 130px;
+}
+
+main > div > div {
+  background-color: rgba(255, 255, 255, 0.521);
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px;
+  color: rgba(0, 0, 0, 0.692);
+}
+
+main h2 {
+  font-weight: bold;
+}
+
+main p {
+  font-weight: 600;
+}
+
+main #hats-box {
+  background: url("https://i.ibb.co/cvpntL1/hats.png");
+}
+
+main #jacket-box {
+  background: url("https://i.ibb.co/px2tCc3/jackets.png");
+}
+
+main #sneakers-box {
+  background: url("https://i.ibb.co/0jqHpnp/sneakers.png");
+}
+
+main #women-box {
+  background: url("https://i.ibb.co/GCCdy8t/womens.png");
+  height: 400px;
+  padding: 130px 100px;
+  background-size: cover;
+}
+
+main #women-box:hover .box {
+  transform: scale(1.1);
+  transition: 5s ease-in-out;
+}
+
+main #men-box {
+  background: url("https://i.ibb.co/R70vBrQ/men.png");
+  height: 400px;
+  padding: 130px 100px;
+  background-size: cover;
+}
+
+main #hats-box, main #jacket-box, main #sneakers-box, main #women-box, main #men-box {
+  margin: 10px auto;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+main #hats-box:hover > div, main #jacket-box:hover > div, main #sneakers-box:hover > div, main #women-box:hover > div, main #men-box:hover > div {
+  background-color: rgba(255, 255, 255, 0.37);
+}
+
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  max-width: 32.333333%;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 49%;
+}
+
+.background-box {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+}
