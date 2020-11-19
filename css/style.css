@@ -13,12 +13,20 @@
   background-size: cover;
 }
 
+.brown-brim:hover {
+  opacity: 0.9;
+}
+
 .blue-beanie {
   background: url("https://i.ibb.co/ypkgK0X/blue-beanie.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.blue-beanie:hover {
+  opacity: 0.9;
 }
 
 .brown-cowboy {
@@ -29,12 +37,20 @@
   background-size: cover;
 }
 
+.brown-cowboy:hover {
+  opacity: 0.9;
+}
+
 .grey-brim {
   background: url("https://i.ibb.co/RjBLWxB/grey-brim.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.grey-brim:hover {
+  opacity: 0.9;
 }
 
 .adidas-nmd {
@@ -45,12 +61,20 @@
   background-size: cover;
 }
 
+.adidas-nmd:hover {
+  opacity: 0.9;
+}
+
 .adidas-yeezy {
   background: url("https://i.ibb.co/dJbG1cT/yeezy.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.adidas-yeezy:hover {
+  opacity: 0.9;
 }
 
 .black-converse {
@@ -61,12 +85,20 @@
   background-size: cover;
 }
 
+.black-converse:hover {
+  opacity: 0.9;
+}
+
 .nike-airforce {
   background: url("https://i.ibb.co/1RcFPk0/white-nike-high-tops.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.nike-airforce:hover {
+  opacity: 0.9;
 }
 
 .black-shearling {
@@ -77,12 +109,20 @@
   background-size: cover;
 }
 
+.black-shearling:hover {
+  opacity: 0.9;
+}
+
 .blue-jacket {
   background: url("https://i.ibb.co/mJS6vz0/blue-jean-jacket.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.blue-jacket:hover {
+  opacity: 0.9;
 }
 
 .grey-jacket {
@@ -93,12 +133,20 @@
   background-size: cover;
 }
 
+.grey-jacket:hover {
+  opacity: 0.9;
+}
+
 .brown-shearling {
   background: url("https://i.ibb.co/s96FpdP/brown-shearling.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.brown-shearling:hover {
+  opacity: 0.9;
 }
 
 .blue-tanktop {
@@ -109,12 +157,20 @@
   background-size: cover;
 }
 
+.blue-tanktop:hover {
+  opacity: 0.9;
+}
+
 .floral-blouse {
   background: url("https://i.ibb.co/4W2DGKm/floral-blouse.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.floral-blouse:hover {
+  opacity: 0.9;
 }
 
 .floral-dress {
@@ -125,12 +181,20 @@
   background-size: cover;
 }
 
+.floral-dress:hover {
+  opacity: 0.9;
+}
+
 .red-dress {
   background: url("https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.red-dress:hover {
+  opacity: 0.9;
 }
 
 .camo-vest {
@@ -141,12 +205,20 @@
   background-size: cover;
 }
 
+.camo-vest:hover {
+  opacity: 0.9;
+}
+
 .floral-shirt {
   background: url("https://i.ibb.co/qMQ75QZ/floral-shirt.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.floral-shirt:hover {
+  opacity: 0.9;
 }
 
 .longsleeve {
@@ -157,12 +229,20 @@
   background-size: cover;
 }
 
+.longsleeve:hover {
+  opacity: 0.9;
+}
+
 .pink-shirt {
   background: url("https://i.ibb.co/RvwnBL8/pink-shirt.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;
   background-size: cover;
+}
+
+.pink-shirt:hover {
+  opacity: 0.9;
 }
 
 body {
@@ -174,12 +254,15 @@ li {
   list-style-type: none;
 }
 
-h3 {
+h2 {
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .row {
-  display: flex;
+  gap: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 nav {
@@ -199,8 +282,10 @@ nav li svg {
 
 nav li span {
   position: relative;
-  right: 15px;
-  top: -2px;
+  font-weight: 600;
+  font-size: 10px;
+  right: 17px;
+  top: -3px;
 }
 
 main > div {
@@ -209,9 +294,7 @@ main > div {
 
 main div > div {
   height: 300px;
-  margin: 0 auto;
   border-radius: 5px;
-  width: 24%;
 }
 
 main div > div p {
@@ -223,7 +306,9 @@ main div > div p {
   color: #000;
   padding: 10px;
   margin: 0 10%;
-  margin-top: 85%;
+  margin-top: 220px;
+  border-radius: 2px;
+  transition: 0.8s ease-in-out;
 }
 
 main div > div p:hover {
@@ -232,16 +317,45 @@ main div > div p:hover {
 }
 
 main div > div ul {
-  position: absolute;
-  width: 21%;
-  margin: 5px;
-  margin-top: 300px;
-  display: flex;
   justify-content: space-between;
-  color: #000;
+  position: absolute;
+  margin: 5px auto;
+  margin-top: 300px;
   font-weight: 600;
+  color: #000;
+  display: flex;
+  width: 21.8%;
 }
 
 main div > div:hover > p {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    gap: 30px 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  h2 {
+    margin-top: 40px;
+  }
+  main > div {
+    margin-bottom: 0;
+  }
+  main div > div {
+    width: 100%;
+    margin: 0 auto;
+  }
+  main div > div ul {
+    width: 43.8%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  main div > div ul {
+    width: 89.8%;
+  }
 }

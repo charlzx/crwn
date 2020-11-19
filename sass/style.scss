@@ -15,11 +15,15 @@ body {
 li {
     list-style-type: none;
 }
-h3 {
+h2 {
     font-weight: 600;
+    margin-bottom: 10px;
 }
 .row {
-    display: flex;
+    // display: flex;
+    gap: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 nav {
     margin: 50px 0;
@@ -36,8 +40,10 @@ nav {
 
         span {
             position: relative;
-            right: 15px;
-            top: -2px;
+            font-weight: 600;
+            font-size: 10px;
+            right: 17px;
+            top: -3px;
         }
     }
 }
@@ -48,11 +54,10 @@ main {
     }
     div > div {
         height: 300px;
-        margin: 0 auto;
         border-radius: 5px;
-        width: 24%;
 
-        p { display: none;
+        p {
+            display: none;
             background-color: #fff;
             border: 1px solid #000;
             text-align: center;
@@ -60,7 +65,9 @@ main {
             color: #000;
             padding: 10px;
             margin: 0 10%;
-            margin-top: 85%;
+            margin-top: 220px;
+            border-radius: 2px;
+            transition: 0.8s ease-in-out;
 
         }
         p:hover {
@@ -69,14 +76,14 @@ main {
         }
 
         ul {
-            position: absolute;
-            width: 21%;
-            margin: 5px;
-            margin-top: 300px;
-            display: flex;
             justify-content: space-between;
-            color: #000;
+            position: absolute;
+            margin: 5px auto;
+            margin-top: 300px;
             font-weight: 600;
+            color: #000;
+            display: flex;
+            width: 21.8%;
         }
     }
     div > div:hover {
@@ -85,3 +92,5 @@ main {
         }
     }
 }
+
+@import 'mobile';

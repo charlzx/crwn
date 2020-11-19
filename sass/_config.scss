@@ -3,4 +3,8 @@
     background-position: center;
     background-color: black;
     background-size: cover;
+
+    &:hover {
+        opacity: 0.9;
+    }
 }
