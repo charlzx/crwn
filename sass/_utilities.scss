@@ -1,26 +1,82 @@
-%overlay {
-    margin: 10px auto;
-    text-align: center;
-    border: 1px solid #000;
-
-    &:hover > div{
-        background-color: rgba(255, 255, 255, 0.37);
-    }
+// Background Images
+.brown-brim {
+    background: url('https://i.ibb.co/ZYW3VTp/brown-brim.png');
+    @include background-properties;
+}
+.blue-beanie {
+    background: url('https://i.ibb.co/ypkgK0X/blue-beanie.png');
+    @include background-properties;
+}
+.brown-cowboy {
+    background: url('https://i.ibb.co/QdJwgmp/brown-cowboy.png');
+    @include background-properties;
+}
+.grey-brim {
+    background: url('https://i.ibb.co/RjBLWxB/grey-brim.png');
+    @include background-properties;
 }
 
-.col-md-4 {
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 32.333333%;
+.adidas-nmd {
+    background: url('https://i.ibb.co/0s3pdnc/adidas-nmd.png');
+    @include background-properties;
 }
-.col-md-6 {
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 49%;
+.adidas-yeezy {
+    background: url('https://i.ibb.co/dJbG1cT/yeezy.png');
+    @include background-properties;
 }
-
-.background-box {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #000;
+.black-converse {
+    background: url('https://i.ibb.co/bPmVXyP/black-converse.png');
+    @include background-properties;
+}
+.nike-airforce {
+    background: url('https://i.ibb.co/1RcFPk0/white-nike-high-tops.png');
+    @include background-properties;
+}
+.black-shearling {
+    background: url('https://i.ibb.co/XzcwL5s/black-shearling.png');
+    @include background-properties;
+}
+.blue-jacket {
+    background: url('https://i.ibb.co/mJS6vz0/blue-jean-jacket.png');
+    @include background-properties;
+}
+.grey-jacket {
+    background: url('https://i.ibb.co/N71k1ML/grey-jean-jacket.png');
+    @include background-properties;
+}
+.brown-shearling {
+    background: url('https://i.ibb.co/s96FpdP/brown-shearling.png');
+    @include background-properties;
+}
+.blue-tanktop {
+    background: url('https://i.ibb.co/7CQVJNm/blue-tank.png');
+    @include background-properties;
+}
+.floral-blouse {
+    background: url('https://i.ibb.co/4W2DGKm/floral-blouse.png');
+    @include background-properties;
+}
+.floral-dress {
+    background: url('https://i.ibb.co/KV18Ysr/floral-skirt.png');
+    @include background-properties;
+}
+.red-dress {
+    background: url('https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png');
+    @include background-properties;
+}
+.camo-vest {
+    background: url('https://i.ibb.co/xJS0T3Y/camo-vest.png');
+    @include background-properties;
+}
+.floral-shirt {
+    background: url('https://i.ibb.co/qMQ75QZ/floral-shirt.png');
+    @include background-properties;
+}
+.longsleeve {
+    background: url('https://i.ibb.co/55z32tw/long-sleeve.png');
+    @include background-properties;
+}
+.pink-shirt {
+    background: url('https://i.ibb.co/RvwnBL8/pink-shirt.png');
+    @include background-properties;
 }
