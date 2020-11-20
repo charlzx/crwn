@@ -1,0 +1,38 @@
+main {
+        width: 70%;
+        margin: 0 auto;
+
+    ul {
+        display: flex;
+        padding-bottom: 10px;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+    }
+
+    .card-details {
+        color: red;
+        margin: 30px 0;
+        font-size: 20px;
+        text-align: center;
+
+        button {
+            background-image: linear-gradient(rgb(125, 197, 238), rgb(0, 140, 221) 85%, rgb(48, 162, 228));
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px;
+            color: rgb(255, 255, 255);
+            border-radius: 5px; 
+            padding: 0px 12px; 
+            font-weight: bold;
+            font-size: 14px;
+            margin: 40px 0;
+            height: 30px; 
+            border: 0px;
+            outline: 0;
+
+            &:hover {
+                background-image: linear-gradient(rgb(76, 162, 212), rgb(16, 107, 160) 85%, rgb(24, 133, 196));
+            }
+        }
+    }
+}

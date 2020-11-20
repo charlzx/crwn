@@ -1,0 +1,38 @@
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+main ul {
+  display: flex;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+main .card-details {
+  color: red;
+  margin: 30px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+main .card-details button {
+  background-image: linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px;
+  color: white;
+  border-radius: 5px;
+  padding: 0px 12px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 40px 0;
+  height: 30px;
+  border: 0px;
+  outline: 0;
+}
+
+main .card-details button:hover {
+  background-image: linear-gradient(#4ca2d4, #106ba0 85%, #1885c4);
+}
