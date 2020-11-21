@@ -258,12 +258,16 @@ main div > div p {
   margin: 0 10%;
   margin-top: 220px;
   border-radius: 2px;
-  transition: 0.8s ease-in-out;
 }
 
 main div > div p:hover {
   background-color: #000;
   color: #fff;
+}
+
+main div > div p:active {
+  background-color: rgba(0, 0, 0, 0.795);
+  border-color: transparent;
 }
 
 main div > div ul {

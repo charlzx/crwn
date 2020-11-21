@@ -1,0 +1,104 @@
+// Stylings Generated from script.js
+
+.cart-container {
+	max-width: 100%;
+	margin: 0 auto;
+}
+.cart-contain {
+	margin: 10px auto;
+}
+.cart-header {
+	width: 100%;
+    display: flex;
+	margin: 0 auto;
+	justify-content: flex-start;
+	border-bottom: 1px solid #000;
+}
+.product {
+    width: 18%;
+    padding: 0;
+    margin: 0 5% 0 0;
+
+    img {
+        border-radius: 5px;
+        height: auto;
+        width: 100%;
+    }
+}
+.description {
+	width: 18%;
+	display: flex;
+    margin: 0 3% 0 0;
+    align-items: center;
+    
+     p {
+        font-size: 1.1rem;
+    }
+}
+.quantity {
+	width: 18%;
+	display: flex;
+    margin: 0 10% 0 0;
+	align-items: center;
+    justify-content: space-evenly;
+}
+.price {
+	width: 18%;
+	display: flex;
+    margin: 0 2% 0 0;
+    align-items: center;
+    
+    p {
+	    font-size: 1.3rem;
+    }
+}
+
+.remove {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        border: none;
+        outline: none; 
+        font-size:30px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+}
+.in-cart {
+	font-size: 1.3rem;
+}
+.add {
+	font-size: 30px;
+	cursor: pointer;
+	font-weight: bold;
+	border: none; 
+	background-color: transparent;
+	outline: none;
+
+}
+.minus {
+	font-size: 30px;
+	cursor: pointer;
+	font-weight: bold;
+	border: none; 
+	background-color: transparent;
+	outline: none;
+}
+.test-warning {
+	text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: red;
+}
+.total-container {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	padding: 10px 0;
+}
+.total-title {
+	margin-right: 50px;
+}
