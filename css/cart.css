@@ -155,3 +155,15 @@ main .card-details button:hover {
     font-size: 15px;
   }
 }
+
+@media screen and (min-width: 1450px) {
+  main ul {
+    font-size: 35px;
+  }
+  .cart-header {
+    font-size: 35px;
+  }
+  .card-details {
+    font-size: 35px;
+  }
+}

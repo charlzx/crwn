@@ -285,6 +285,19 @@ main div > div:hover > p {
   display: block;
 }
 
+@media screen and (min-width: 1450px) {
+  main div > div {
+    height: 500px;
+  }
+  main div > div p {
+    margin-top: 380px;
+    padding: 20px;
+  }
+  main div > div ul {
+    margin-top: 500px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .row {
     gap: 30px 10px;
