@@ -146,6 +146,7 @@ for (let i = 0; i < carts.length; i++){
     carts[i].addEventListener("click", ()=>{
         cartNumbers(products[i]);
         totalCost(products[i]);
+        displayCart();
     });
 }
 
@@ -225,7 +226,8 @@ function displayCart(){
     cartCost = parseInt(cartCost);
 
     let productContainer = document.querySelector(".output");
-    
+    let cartMenu = document.querySelector('.cart-items');
+
 	if( cartItems && productContainer ){
        productContainer.innerHTML = "";
        Object.values(cartItems).map(item =>{
@@ -257,7 +259,26 @@ function displayCart(){
     document.getElementById('amount').innerText = y;
     deleteButtons();
     manageQuantity();
-	}
+    }
+
+    if(cartItems && cartMenu) {
+        cartMenu.innerHTML = '';
+        Object.values(cartItems).map( (item, index) => {
+            cartMenu.innerHTML += `
+            <div>
+                <img src = "${item.image}" />
+                <div class="item-details">
+                    <span class="checkout-item-name">${item.name}</span>
+                    <br>
+                    <span class="quantity">
+                    <span class="value">${item.inCart}</span> × 
+                    <span class="price space"> ₦${item.price}</span>
+                    </span>
+                </div>
+            </div>
+            `
+        });
+    }
 };
 
 function manageQuantity() {
@@ -329,3 +350,12 @@ function deleteButtons() {
 
 onLoadCartNumbers();
 displayCart();
+
+const dropdown = document.querySelector('.cart-dropdown');
+document.querySelector('.cart-icon').addEventListener('click', () => {
+    if(dropdown.style.display == 'none') {
+        dropdown.style.display = 'block'
+    } else {
+        dropdown.style.display = 'none'
+    }
+})
