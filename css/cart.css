@@ -8,6 +8,7 @@ main ul {
   padding-bottom: 10px;
   margin: 0;
   text-align: center;
+  font-weight: 700;
   justify-content: space-between;
   border-bottom: 1px solid black;
 }
@@ -39,32 +40,25 @@ main .card-details button:hover {
   background-image: linear-gradient(#4ca2d4, #106ba0 85%, #1885c4);
 }
 
-.cart-container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.cart-contain {
-  margin: 10px auto;
-}
-
 .cart-header {
   width: 100%;
   display: flex;
   margin: 0 auto;
   justify-content: flex-start;
   border-bottom: 1px solid #000;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .product {
   width: 18%;
-  padding: 0;
-  margin: 0 5% 0 0;
+  padding: 5px 0;
+  margin: 0px 5% 0px 0;
 }
 
 .product img {
   border-radius: 5px;
-  height: auto;
+  height: 100%;
   width: 100%;
 }
 
@@ -75,16 +69,13 @@ main .card-details button:hover {
   align-items: center;
 }
 
-.description p {
-  font-size: 1.1rem;
-}
-
 .quantity {
   width: 18%;
   display: flex;
   margin: 0 10% 0 0;
   align-items: center;
   justify-content: space-evenly;
+  text-align: center;
 }
 
 .price {
@@ -113,23 +104,25 @@ main .card-details button:hover {
   background-color: transparent;
 }
 
+.totalPrice {
+  display: none;
+}
+
 .in-cart {
   font-size: 1.3rem;
 }
 
-.add {
-  font-size: 30px;
+.increase {
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
   border: none;
   background-color: transparent;
   outline: none;
 }
 
-.minus {
-  font-size: 30px;
+.decrease {
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 700;
   border: none;
   background-color: transparent;
   outline: none;
@@ -142,13 +135,23 @@ main .card-details button:hover {
   color: red;
 }
 
-.total-container {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding: 10px 0;
+#total {
+  text-align: right;
+  font-weight: 700;
 }
 
-.total-title {
-  margin-right: 50px;
+#total #total-span {
+  padding-right: 10%;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+  main .cart-header {
+    font-size: 15px;
+  }
+  main .card-details {
+    font-size: 15px;
+  }
 }
