@@ -40,5 +40,9 @@ main {
     }
 }
 
+.cart-icon {
+    cursor: pointer;
+}
+
 @import 'importFromJs';
 @import 'mobileCart';
